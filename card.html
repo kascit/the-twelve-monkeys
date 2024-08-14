@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add styles to the card */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 300px;
+            margin: auto;
+            border: 2px whitesmoke solid;
+            border-radius: 5px;
+            text-align: center;
+            font-family: arial;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .container img {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            float: center;
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .container h4 {
+            font-size: 22px;
+            margin:0;
+        }
+
+        .container p {
+            font-size: 16px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="openCard(this)">
+            <img src="heart.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>1</b></h4>
+                <p>one</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="diamond.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>2</b></h4>
+                <p>two</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="clubs.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>3</b></h4>
+                <p>three</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="spades.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>4</b></h4>
+                <p>four</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="heart.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>5</b></h4>
+                <p>five</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="diamond.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>6</b></h4>
+                <p>six</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="clubs.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>7</b></h4>
+                <p>seven</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="spades.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>8</b></h4>
+                <p>eight</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="heart.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>9</b></h4>
+                <p>nine</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="diamond.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>10</b></h4>
+                <p>ten</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="clubs.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>11</b></h4>
+                <p>eleven</p>
+            </div>
+        </div>
+        <div class="card" onclick="openCard(this)">
+            <img src="spades.png" alt="card-img" style="width:100%">
+            <div class="para">
+                <h4><b>12</b></h4>
+                <p>twelve</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openCard(card) {
+            const text = card.querySelector('.para p').innerText;
+            window.location.href = text + '.html';
+        }
+    </script>
+</body>
+</html>
